@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Okra, Helvetica, sans-serif;
+}
+
+body {
+    /* apply that font */
+    font-family: 'Merriweather', serif;
+    background-color: #f9fafc;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+
+.navbar .navbar__brand {
+    width: 100px;
+}
+
+.navbar .navbar__brand .navbar__logo {
+    width: 100%;
+}
+
+
+.navbar .navbar__nav__item .nav__item {
+    background-image: linear-gradient(
+            /* direction */
+            to right,
+            /* color => you can add number of colors */
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+.navbar .navbar__nav__item .nav__item:hover{
+    background-image: linear-gradient(
+            /* direction */
+            to right,
+            /* color => you can add number of colors */
+            #dd2476 0%,
+            #ff512f 51%,
+            #dd2476 100%);
+}
+
+/* responsive navbar TABLET*/
+@media (min-width :768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
+
+/* responsive navbar DeskTop*/
+@media (min-width:1024px) {
+    .navbar .navbar__brand {
+        width: 150px;
+    }
+
+    .navbar .navbar__nav__item .nav__item {
+        padding: 20px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,16 @@
+=> Color Gradient 
+
+
+    // it takes two parameters 
+    // 1.direction
+    // 2.Color => you can add as many color you want to add with there percentage.
+    
+    background-image: linear-gradient(
+        /* direction */
+        to right,
+
+        /* color => you can add number of colors */ 
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
