@@ -10,7 +10,6 @@ body {
     /* apply that font */
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
-    /* height: 20000px; */
 }
 
 .navbar {
@@ -122,8 +121,137 @@ body {
     padding-bottom: 8px;
 }
 
+
+.update__container{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+.stay__updated__text{
+    color: rgb(28, 28, 88);
+}
+
+.stay__updated{
+    text-align: center;
+}
+
+.update__container{
+    text-align: left;
+}
+
+.stay__updated__search__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.text__input__field{
+    width: 230px;
+    height: 12px;;
+    padding: 5px 10px;
+    border: 1.7px solid  rgb(234, 151, 151);
+    border-radius: 8px;
+    outline: none;
+}
+
+.update__button{
+    padding: 12px 20px;
+    border: none;
+    background-image: linear-gradient(
+            /* direction */
+            to right,
+            /* color => you can add number of colors */
+            #dd2476 0%,
+            #ff512f 51%,
+            #dd2476 100%);
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+}
+
+footer{
+   width: 100%;
+   height: fit-content;
+   background-color: red;
+   padding: 5px 0px;
+   margin-top: 70px;
+}
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.foot__logo{
+    width: 100px;
+}
+
+.footer__logo{
+    width: 100%;
+}
+.footer_nav{
+    margin-top: 5px;
+}
+.footer_nav ul li{
+    list-style-type: none;
+    padding: 3px 0px;
+    display: inline;
+    gap: 5px;
+}
+
+.footer_nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+}
+
+
+.footer_nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(189, 189, 189);
+}
+
+#owner{
+    background-color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
 /* responsive navbar TABLET*/
 @media (min-width :768px) {
+    .foot__logo{
+        width: 300px;
+    }
+    .footer_content{
+        flex-direction: row;
+    }
+
+    .footer_nav ul li{
+        display: flex;
+        gap: 15px;
+        padding: 10px 0px;
+    }
+    .footer_nav ul li a{
+        font-size: 18px;
+    }
+
+    .stay__updated{
+        margin: 80px;
+    }
+
+    .stay__updated__text{
+        font-size: 32px;
+    }
+
+    .text__input__field{
+        width: 300px;
+    }
+    .update__button{
+        padding: 15px 25px;
+    }
     .explore__menu__container {
         position: relative;
     }
