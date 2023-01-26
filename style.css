@@ -10,6 +10,7 @@ body {
     /* apply that font */
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
+    /* height: 20000px; */
 }
 
 .navbar {
@@ -61,6 +62,7 @@ body {
     margin: 0 auto;
 }
 
+/* 
 .container .hero__image__container {
     width: 100%;
     height: 260px;
@@ -68,7 +70,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-}
+} */
 
 .container .hero__image__container .hero__image {
     width: 100%;
@@ -86,8 +88,95 @@ body {
     padding: 10px;
 }
 
+.explore__menu__text {
+    margin: 50px 0px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #1d3557;
+    font-weight: 800;
+}
+
+.food__card {
+    background: #f9f9f9;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 20px 0px;
+}
+
+.food__card__image__container {
+    width: 100%;
+}
+
+.food__image {
+    width: 100%;
+    border-radius: 13px 13px 0px 0px;
+}
+
+.food__card_description {
+    padding: 15px;
+}
+
+.food__title {
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
 /* responsive navbar TABLET*/
 @media (min-width :768px) {
+    .explore__menu__container {
+        position: relative;
+    }
+
+    .explore__menu__gradient__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+                /* direction */
+                to right,
+                /* color => you can add number of colors */
+                #dd2476 0%,
+                #ff512f 51%,
+                #dd2476 100%);
+        z-index: -1;
+        transform: skewY(-5deg);
+    }
+
+    .explore__menu__lists {
+        display: flex;
+        gap: 10px;
+        padding: 0 30px;
+    }
+
+    .food__card {
+        width: 33%;
+        height: 400px;
+    }
+
+    .food__card__image__container {
+        width: 100%;
+        height: 300px;
+    }
+
+    .food__card__image__container>img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .food__card__image__container>img:nth-child(odd) {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    #pizza__card {
+        margin-top: -10px;
+    }
+
     .navbar {
         justify-content: space-between;
         padding: 10px 30px;
@@ -111,8 +200,13 @@ body {
 
 /* responsive navbar DeskTop*/
 @media (min-width:1024px) {
+
     .container {
         max-width: 70%;
+    }
+
+    .explore__menu__lists {
+        gap: 25px;
     }
 
     .navbar .navbar__brand {
